@@ -4,7 +4,7 @@ from .models import Todo
 from django.urls import reverse_lazy
 
 # Create your views here.
-class TodoListView(listView):
+class TodoListView(ListView):
     model = Todo
 
 class TodoCreateView(CreateView):
